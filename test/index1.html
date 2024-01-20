@@ -9,6 +9,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Github</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -19,18 +20,18 @@
         <div class="content">
             <p>Sign in to GitHub</p>
         </div>
-        <div class="form-login">
+        <div class="form-login" name="form">
             <div class="input">
                 <label>Username or email address</label>
-                <input type="text" class="input-1">
+                <input type="text" class="input-1" name="username" id="username">
             </div>
             <div class="input">
                 <label>Password</label>
-                <input type="password" class="input-1">
+                <input type="password" class="input-1" id="password" name="password">
                 <a href="#" class="pass">Forgot password?</a>
             </div>
             <div class="btn-dangnhap">
-                <input type="submit" class="sign-in" value="Sign-in">
+                <input type="submit" class="sign-in" value="Sign-in" id="submit" onclick="validate()">
             </div>
             <div class="box">
                 <a href=""><span>Sign in with a passkey</span></a>
